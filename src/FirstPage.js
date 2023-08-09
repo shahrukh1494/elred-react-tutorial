@@ -61,7 +61,7 @@ const FirstPage = () => {
       <UseCallbackExample />
       <UseMemoExample />
       <div>
-        {data.map((value, index) => (
+        {data?.map((value, index) => (
           <div key={value.id}>
             <span>{index + 1 + ". "}</span>
             {value.title}
