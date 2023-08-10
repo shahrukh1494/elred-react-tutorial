@@ -8,6 +8,7 @@ import UseReducerExample from "./UseReducerExample";
 import UseCallbackExample from "./UseCallbackExample";
 import UseMemoExample from "./UseMemoExample";
 import useFetchHook from "./useFetchHook";
+import PureComponentExample from "./PureComponentExample";
 
 const FirstPage = () => {
   const [returnDiv, setReturnDiv] = useState("");
@@ -60,6 +61,7 @@ const FirstPage = () => {
       <UseReducerExample />
       <UseCallbackExample />
       <UseMemoExample />
+      <PureComponentExample />
       <div>
         {data?.map((value, index) => (
           <div key={value.id}>
